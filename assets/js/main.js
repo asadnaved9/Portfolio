@@ -114,6 +114,20 @@ tracks.forEach(track => {
 
 /*=============== COPY EMAIL IN CONTACT ===============*/
 
+const copyBtn = document.getElementById('contact-btn'),
+      copyEmail = document.getElementById('contact-email').textContent
+
+copyBtn.addEventListener('click', () => {
+  //Use the clipboard API to copy text
+  navigator.clipboard.writeText(copyEmail).then(() => {
+    copyBtn.innerHTML = 'Email Copied <i class="ri-check-double-fill"></i>'
+
+    //Restore the original Text
+    setTimeout(() => {
+      copyBtn.innerHTML = 'Copy Email <i class="ri-file-copy-line"></i>'
+    }, 2000)
+  })
+})
 
 /*=============== CURRENT YEAR OF THE FOOTER ===============*/ 
 

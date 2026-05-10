@@ -348,7 +348,7 @@ img {
 .home__social-link{
   color: var(--title-color);
   font-size: 1.25rem;
-  transition: transform .4s, color .4s;
+  transition: transform .3s, color .3s;
 }
 
 .home__social-link:hover{
@@ -866,6 +866,79 @@ img {
 
 /*=============== CONTACT ===============*/
 
+.contact__container{
+  row-gap: 4rem;
+  padding-bottom: 2rem;
+}
+
+.contact .section__title{
+  margin-bottom: 1rem;
+}
+
+.contact__data{
+  text-align: center;
+}
+
+.contact__description{
+  font-family: var(--second-font);
+  margin-bottom: 1.5rem;
+}
+
+.contact__email{
+  display: none;
+}
+
+.contact__button{
+  cursor: pointer;
+}
+
+.contact__content{
+  row-gap: 3rem;
+}
+
+.contact__info{
+  row-gap: 1rem;
+}
+
+.contact__title{
+  font-size: var(--h3-font-size);
+  color: var(--first-color);
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.contact__address{
+  color: var(--title-color);
+  font-style: normal;
+  font-weight: var(--font-medium);
+  text-align: center;
+}
+
+.contact__links{
+  display: grid;
+  grid-template-columns: max-content;
+  justify-content: center;
+  row-gap: 0.25rem;
+}
+
+.contact__link{
+  color: var(--title-color);
+  font-weight: var(--font-medium);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 0.5rem;
+  transition: transform .2s, color .2s;
+}
+
+.contact__link i{
+  font-size: 1.5rem;
+}
+
+.contact__link:hover{
+  transform: translateX(.35rem);
+  color: var(--text-color);
+}
 
 /*=============== FOOTER ===============*/
 
@@ -1186,6 +1259,42 @@ img {
   }
   .testimonials__number{
     font-size: var(--normal-font-size);
+  }
+
+  .contact{
+    padding-block: 9rem 4rem;
+  }
+
+  .contact__container{
+    row-gap: 8rem;
+  }
+
+  .contact__description{
+    font-size: var(--h2-font-size);
+  }
+
+  .contact__content{
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .contact__info{
+    row-gap: 1rem;
+    justify-self: flex-start;
+  }
+
+  .contact__write{
+    justify-self: flex-end;
+  }
+
+  .contact__title{
+    margin-bottom: 0.75rem;
+  }
+
+  .contact__links{
+    row-gap: 0.5rem;
+  }
+  .contact__link{
+    font-size: 1.25rem;
   }
 }
 
