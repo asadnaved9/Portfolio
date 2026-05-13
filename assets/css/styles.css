@@ -640,6 +640,18 @@ img {
   justify-content: space-between;
 }
 
+.work__subtitle i{
+  color: var(--text-color-light);
+  font-size: var(--smaller-font-size);
+  font-style: var(--font-regular);
+}
+
+.work__year i{
+  color: var(--text-color-light);
+  font-size: var(--smaller-font-size);
+  font-style: var(--font-regular);
+}
+
 .work__title{
   font-size: var(--h2-font-size);
   margin-bottom: 0.5rem;
